@@ -1,0 +1,107 @@
+                                                          /* animation for home */
+/* animation for when hovering over words in home page both back and go */
+@keyframes back{
+    0%{
+       left: 10px;
+       opacity: 1;
+       
+    }
+    100%{
+        opacity: 1;
+        left: 30px;
+    }
+    
+}
+
+@keyframes go{
+    0%{
+        left: 30px;
+    }
+   
+    100%{
+        left: 0px;
+    }
+}
+
+                                                                  /*  */
+
+                                                        /* animation for about  page*/
+
+@keyframes move{
+    0%{
+        width: 0%;
+    }
+    60%{
+        width: 100%;  
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes bord{
+    0%{
+        border-right: none;
+    }
+    100%{
+        border-right: 4px solid rgb(249, 250, 248);
+        overflow: show;
+    }
+}
+
+@keyframes con{
+    0%{
+        padding-top: 10px;
+        opacity: 1;
+    }
+    100%{
+        padding-left: 0;
+        opacity: 1;
+    }
+}
+                                                                    /*  */
+
+                                                      /* animation for contact page */
+/* animation for hovering over heading both teff and seff  */
+
+  @keyframes teff {
+    0%{
+      transform: scaleY(1);
+    }
+    25%{
+       transform: scaleY(1.3) scaleX(0.7);
+    }
+    50%{
+        transform: scaleY(0.8) scaleX(1.2);
+    }
+    70%{
+        transform: scaleY(1.1) scaleX(0.9);
+    }
+    90%{
+        transform: scaleY(0.9) scaleX(1);
+    }
+    100%{
+        transform: scaleY(1) scaleX(1);
+    }
+}
+                                                    
+@keyframes seff {
+    0%{
+        transform: scaleY(1.3) scaleX(0.7);
+     }
+     25%{
+         transform: scaleY(0.8) scaleX(1.2);
+     }
+     50%{
+         transform: scaleY(1.1) scaleX(0.9);
+     }
+     75%{
+         transform: scaleY(0.9) scaleX(1);
+     }
+     100%{
+         transform: scaleY(1) scaleX(1);
+     }
+}
+
+                                                                     /*  */

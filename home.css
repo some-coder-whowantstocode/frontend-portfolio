@@ -1,0 +1,126 @@
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+    font-family: 'Tilt Warp';
+    height: auto;
+    width: auto;
+}
+
+.red {
+    color: rgb(168, 6, 6);
+}
+
+#home .left {
+    margin-left: 100px;
+}
+
+.left span {
+    font-size: 8rem;
+    font-weight: 100;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+
+.sa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 8rem;
+    opacity: 0;
+    font-weight: 100;
+}
+
+.h:hover .sa {
+    animation-name: back;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.a {
+    animation: go 0.5s linear forwards;
+    position: absolute;
+}
+
+.h:hover .a {
+    animation: back 0.5s forwards;
+    opacity: 0 !important;
+}
+
+
+
+.ll {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 22%;
+    width: 150px;
+}
+
+.lamp {
+    width: inherit;
+    z-index: 10;
+    position: sticky;
+}
+
+.light {
+    width: 489px;
+
+
+    opacity: 0;
+}
+
+.on {
+    opacity: 1 !important;
+}
+
+.off {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 1px rgba(153, 151, 151, 0.75);
+    left: 50%;
+    background-color: rgb(0, 0, 0);
+    top: 1px;
+    border: 2px solid rgb(145, 143, 143);
+    animation: lightmode 0.3s linear forwards;
+}
+
+.dark {
+    animation: darkmode 0.3s linear forwards;
+    background-color: rgb(255, 255, 255);
+}
+
+.imginfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 97%;
+    left: -118%;
+    position: inherit;
+}
+
+.sl {
+    color: #585555 !important;
+}
+
+.di {
+    position: inherit;
+    top: 70%;
+    color: rgba(32, 31, 31, 0.521);
+    background-color: transparent;
+
+}

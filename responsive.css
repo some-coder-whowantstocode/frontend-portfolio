@@ -1,0 +1,46 @@
+@media  screen and (max-width:1000px) {
+    .right{
+        display: none;
+    }
+    #mode{
+        display: none;
+    }
+    #home{
+        justify-content: center!important;
+    }
+    .left{
+        justify-content: center!important;
+        margin-left: 0!important;
+    }
+    .title4{
+        display: block!important;
+    }
+   
+}
+@media screen and (max-width:488px) {
+   .left span{
+    font-size: 4rem!important;
+   }
+   .left .sa{
+    font-size: 4rem!important;
+   }
+   .shr{
+    font-size: 4rem;
+   }
+}
+@media screen and (max-width:500px) {
+    .left-about{
+        width: 100vw!important;
+    }
+    .right-about{
+        width: 100vw!important;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .contactinfo{
+        max-width: 100vw!important;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,131 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+#about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: auto;
+    width: auto;
+}
+#about-me h2{
+    font-size: 4rem;
+    animation-name: back;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    color: transparent;
+    position: relative;
+    z-index: 2;
+}
+#about-me h2::before{
+    content:attr(data-text);
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 0%;
+    height: 100%;
+   color: aquamarine;
+    overflow: hidden;
+    animation:bord 0.6s infinite forwards, move 3s linear infinite forwards;
+    -webkit-text-stroke:  2px aquamarine;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.left-about{
+    width: 60vw;
+    font-size: 1.2rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.right-about{
+ 
+    border-right: none;
+    width: 80rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    /* background-color: black; */
+}
+.right-about h3{
+    color: rgb(208, 209, 208);
+    font-size: 3rem;
+    padding: 2rem; 
+}
+/* progress bar */
+.progress{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+background: conic-gradient(rgb(105, 3, 3) 280deg, rgb(253, 254, 254) 0deg);
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 1px 22px 2px rgba(127, 123, 123, 0.75) inset;
+
+margin: 2rem;
+}
+
+.upper{
+    width: 8rem;
+    height: 8rem;
+    background-color:rgb(39 38 38);
+    border-radius: 50%;
+    box-shadow: 0px 1px 22px 2px rgba(12, 12, 12, 0.75) inset;
+    font-size: 1rem;
+    color: white;
+}
+.con{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upper h4{
+    font-size: 2rem;
+}
+.upper h5{
+    font-size: 1.6rem;
+}
+
+
+.upper .con{
+    opacity: 0;
+}
+.progress:hover .con{
+    animation: con 0.2s linear forwards;
+}
+
+
+.tagcloud {
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    width: 100px;
+  }
+  
+  /* Change color of each text in sphere on hover   */
+  .tagcloud--item:hover {
+    color: #FFC300 ;
+  }
+  .Sphere{
+    width: fit-content;
+    height: fit-content;
+  }
+              
+          
